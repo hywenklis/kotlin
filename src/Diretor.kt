@@ -1,5 +1,6 @@
-class Gerente(
+class Diretor(
     val senha: Int,
+    val plr: Double,
     nome: String,
     cpf: String,
     salario: Double

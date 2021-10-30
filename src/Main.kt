@@ -35,4 +35,26 @@ fun main() {
         println("Não autenticado!")
     }
 
+    println()
+
+    val herbert = Diretor(
+        nome = "Herbert",
+        cpf = "111.111.111-11",
+        salario = 6000.0,
+        senha = 1234,
+        plr = 200.0
+    )
+
+    println("nome ${herbert.nome}")
+    println("cpf ${herbert.cpf}")
+    println("salario ${herbert.salario}")
+    println("Bonificação ${herbert.bonificacao()}")
+    println("plr ${herbert.plr}")
+
+    if (herbert.autentica(1234)) {
+        println("Autenticado!")
+    } else {
+        println("Não autenticado!")
+    }
+
 }
