@@ -11,7 +11,7 @@ fun main() {
     println("nome ${hywenklis.nome}")
     println("cpf ${hywenklis.cpf}")
     println("salario ${hywenklis.salario}")
-    println("Bonificação ${hywenklis.bonificacao()}")
+    println("Bonificação ${hywenklis.bonificacao}")
 
     println()
 
@@ -27,7 +27,7 @@ fun main() {
     println("nome ${maria.nome}")
     println("cpf ${maria.cpf}")
     println("salario ${maria.salario}")
-    println("Bonificação ${maria.bonificacao()}")
+    println("Bonificação ${maria.bonificacao}")
 
     if (maria.autentica(123)) {
         println("Autenticado!")
@@ -36,6 +36,8 @@ fun main() {
     }
 
     println()
+
+    println("Bem vindo ao ByteBank")
 
     val herbert = Diretor(
         nome = "Herbert",
@@ -48,7 +50,7 @@ fun main() {
     println("nome ${herbert.nome}")
     println("cpf ${herbert.cpf}")
     println("salario ${herbert.salario}")
-    println("Bonificação ${herbert.bonificacao()}")
+    println("Bonificação ${herbert.bonificacao}")
     println("plr ${herbert.plr}")
 
     if (herbert.autentica(1234)) {
