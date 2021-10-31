@@ -1,5 +1,5 @@
 class Gerente : Funcionario {
-    val senha: Int
+    private val senha: Int
 
     constructor(
         nome: String,

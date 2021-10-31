@@ -2,61 +2,22 @@ fun main() {
 
     println("Bem vindo ao ByteBank")
 
-    val hywenklis = Funcionario(
-        nome = "hywenklis",
-        cpf = "111.111.111-11",
-        salario = 1000.0
+    val contaCorrente = ContaCorrente(
+        titular = "Herbert",
+        numero = 1000
+    )
+    val contaPoupanca = ContaPoupanca(
+        titular = "Maria",
+        numero = 1001
     )
 
-    println("nome ${hywenklis.nome}")
-    println("cpf ${hywenklis.cpf}")
-    println("salario ${hywenklis.salario}")
-    println("Bonificação ${hywenklis.bonificacao}")
+    contaPoupanca.deposita(1000.0)
+    contaCorrente.deposita(1000.0)
 
-    println()
+    contaPoupanca.saca(100.0)
+    contaCorrente.saca(100.0)
 
-    println("Bem vindo ao ByteBank")
-
-    val maria = Gerente(
-        nome = "Maria",
-        cpf = "111.111.111-11",
-        salario = 3000.0,
-        senha = 123
-    )
-
-    println("nome ${maria.nome}")
-    println("cpf ${maria.cpf}")
-    println("salario ${maria.salario}")
-    println("Bonificação ${maria.bonificacao}")
-
-    if (maria.autentica(123)) {
-        println("Autenticado!")
-    } else {
-        println("Não autenticado!")
-    }
-
-    println()
-
-    println("Bem vindo ao ByteBank")
-
-    val herbert = Diretor(
-        nome = "Herbert",
-        cpf = "111.111.111-11",
-        salario = 6000.0,
-        senha = 1234,
-        plr = 200.0
-    )
-
-    println("nome ${herbert.nome}")
-    println("cpf ${herbert.cpf}")
-    println("salario ${herbert.salario}")
-    println("Bonificação ${herbert.bonificacao}")
-    println("plr ${herbert.plr}")
-
-    if (herbert.autentica(1234)) {
-        println("Autenticado!")
-    } else {
-        println("Não autenticado!")
-    }
-
+    println("Saldo da conta poupança: ${contaPoupanca.saldo}")
+    println("Saldo da conta corrente: ${contaCorrente.saldo}")
 }
+
