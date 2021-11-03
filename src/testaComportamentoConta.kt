@@ -5,6 +5,9 @@ fun testaComportamentoConta() {
     val conta2 = ContaPoupanca("Maria", 1001)
     conta2.deposita(300.0)
 
+    val conta3 = ContaSalario("Hywenklis", 1003)
+    conta3.deposita(300.0)
+
     println(conta1.titular)
     println(conta1.numero)
     println(conta1.saldo)
@@ -44,4 +47,5 @@ fun testaComportamentoConta() {
 
     println("Saldo da conta do ${conta1.titular}")
     println(conta1.saldo)
+
 }
