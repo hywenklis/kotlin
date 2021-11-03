@@ -1,9 +1,0 @@
-fun main() {
-
-    testaAutenticacao()
-}
-
-
-
-
-
